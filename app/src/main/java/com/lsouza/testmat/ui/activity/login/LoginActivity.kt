@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.lsouza.testmat.databinding.ActivityLoginBinding
 import com.lsouza.testmat.ui.activity.MainActivity
+import com.lsouza.testmat.ui.activity.register.RegisterActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -19,6 +20,10 @@ class LoginActivity : AppCompatActivity() {
         binding.btnEnter.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
+        }
+
+        binding.btnRegister.setOnClickListener {
+            startActivity(Intent(this, RegisterActivity::class.java))
         }
 
     }
